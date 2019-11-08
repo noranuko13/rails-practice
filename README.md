@@ -1,0 +1,37 @@
+# rails-practice
+- Rails practice / Ruby on Rails の練習
+
+
+## コンセプト
+- 一般的な業務用アプリケーションに必要な機能を作成してみるテスト
+  - 検索・一覧
+    - 一覧からの一括選択による更新・削除
+    - ファイルダウンロード
+  - 一般的な CRUD（生成・読取・更新・削除）
+
+
+## バージョン情報
+- Ruby 2.6.0
+- Ruby on Rails v6.0.1
+
+
+## 参考文献
+
+### Ruby on Rails
+- [rails/rails - GitHub](https://github.com/rails/rails)
+  - 原点にして頂点
+  - フレームワークのコードを読めば大体分かる
+- [Ruby on Rails Guides](https://guides.rubyonrails.org/)
+  - Ruby on Railsのリファレンスガイド
+　　- 日本語訳
+    - [Ruby on Rails ガイド：体系的に Rails を学ぼう](https://railsguides.jp/)
+- [Ruby on Rails チュートリアル：実例を使って Rails を学ぼう](https://railstutorial.jp/)
+  - かの有名なRailsチュートリアル
+  - 関連リンク
+    - [yasslab/sample_apps](https://github.com/yasslab/sample_apps)
+
+### Ruby
+- [Documentation - Ruby](https://www.ruby-lang.org/ja/documentation/)
+  - 各種Ruby関連のドキュメントへのリンク集
+- [オブジェクト指向スクリプト言語 Ruby リファレンスマニュアル (Ruby 2.6.0)](https://docs.ruby-lang.org/ja/2.6.0/doc/index.html)
+  - Rubyのリファレンスマニュアル
