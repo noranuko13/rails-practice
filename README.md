@@ -11,7 +11,7 @@
 
 
 ## バージョン情報
-- Ruby 2.6.0
+- Ruby 2.6.5
 - Ruby on Rails v6.0.1
 
 
