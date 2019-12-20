@@ -15,6 +15,11 @@
 - Ruby on Rails v6.0.2
 
 
+## 対象ブラウザ
+- [Google Chrome ウェブブラウザ](https://www.google.com/intl/ja_jp/chrome/) 最新版
+  - 個人のキャパシティで動作確認してるので、Chromeだけでお許し下さい
+
+
 ## 参考文献
 
 ### Ruby on Rails
