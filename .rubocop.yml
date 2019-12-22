@@ -6,5 +6,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
 
+inherit_from: .rubocop_todo.yml
+
 require:
   - rubocop-rails
