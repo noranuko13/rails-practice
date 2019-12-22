@@ -43,6 +43,7 @@ group :development do
   # RuboCop
   # https://github.com/rubocop-hq/rubocop
   gem 'rubocop', '~> 0.78.0', require: false
+  gem 'rubocop-rails', '~> 2.4', require: false
 end
 
 group :test do
