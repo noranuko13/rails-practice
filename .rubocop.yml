@@ -14,3 +14,7 @@ require:
 # ネストしたモジュールとクラスの定義スタイル
 Style/ClassAndModuleChildren:
   Enabled: false
+
+# トップレベルのドキュメント
+Style/Documentation:
+  Enabled: false
