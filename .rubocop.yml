@@ -11,6 +11,7 @@ require:
 
 # 1行あたりの文字数
 Layout/LineLength:
+  Max: 100
   IgnoredPatterns: ['\A( *)#']
 
 # ネストしたモジュールとクラスの定義スタイル
