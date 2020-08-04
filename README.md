@@ -15,6 +15,10 @@ docker exec -it rpweb bash
 # データベースの作成＆マイグレーション
 rails db:create
 rails db:migrate RAILS_ENV=development
+
+# テスト
+rails db:create RAILS_ENV=test  # 初回
+rails test
 ```
 
 
