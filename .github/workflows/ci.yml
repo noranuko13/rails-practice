@@ -23,7 +23,7 @@ jobs:
         run: docker-compose run rpweb rubocop
       - name: Create Database.
         run: docker-compose run rpweb rails db:create RAILS_ENV=test
-      - name: Run yarn install --check-files.
-        run: docker-compose run rpweb yarn install --check-files
+      - name: Run yarn install.
+        run: docker-compose run rpweb yarn install
       - name: Run Minitest.
         run: docker-compose run rpweb rails test
