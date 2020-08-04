@@ -14,6 +14,11 @@ Layout/LineLength:
   Max: 100
   IgnoredPatterns: ['\A( *)#']
 
+# ブロックあたりの行数
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/**/*'
+
 # ネストしたモジュールとクラスの定義スタイル
 Style/ClassAndModuleChildren:
   Enabled: false
