@@ -20,6 +20,7 @@ rails db:migrate RAILS_ENV=development
 rails db:create RAILS_ENV=test  # 初回
 rails test
 ```
+- http://localhost:3000
 
 
 ## コンセプト
