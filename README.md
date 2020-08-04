@@ -2,6 +2,14 @@
 - Rails practice / Ruby on Rails の練習
 
 
+## How to use
+- [Docker](https://www.docker.com/)
+```shell script
+docker-compose build
+docker-compose up
+```
+
+
 ## コンセプト
 - 一般的な業務用アプリケーションに必要な機能を作成してみるテスト
   - 検索・一覧
