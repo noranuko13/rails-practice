@@ -11,6 +11,10 @@ docker-compose up
 
 # Dockerコンテナに入る
 docker exec -it rpweb bash
+
+# データベースの作成＆マイグレーション
+rails db:create
+rails db:migrate RAILS_ENV=development
 ```
 
 
