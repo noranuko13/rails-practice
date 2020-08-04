@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  DOCKER_BUILDKIT: 1
+  COMPOSE_DOCKER_CLI_BUILD: 1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker image.
+        run: docker-compose build
+      - name: Start service.
+        run: docker-compose up -d
+      - name: Run RuboCop.
+        run: docker-compose run rpweb rubocop
+      - name: Create Database.
+        run: docker-compose run rpweb rails db:create RAILS_ENV=test
+      - name: Run yarn install --check-files.
+        run: docker-compose run rpweb yarn install --check-files
+      - name: Run Minitest.
+        run: docker-compose run rpweb rails test
