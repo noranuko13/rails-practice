@@ -5,8 +5,12 @@
 ## How to use
 - [Docker](https://www.docker.com/)
 ```shell script
+# Dockerコンテナの起動
 docker-compose build
 docker-compose up
+
+# Dockerコンテナに入る
+docker exec -it rpweb bash
 ```
 
 
