@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'socket'
+require 'ipaddr'
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -64,4 +67,10 @@ Rails.application.configure do
 
   # devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Docker Network
+  # https://stackoverflow.com/questions/29417328/how-to-disable-cannot-render-console-from-on-rails
+  config.web_console.whitelisted_ips = Socket.ip_address_list.reduce([]) do |res, addrinfo|
+    addrinfo.ipv4? ? res << IPAddr.new(addrinfo.ip_address).mask(24) : res
+  end
 end
