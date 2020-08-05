@@ -13,6 +13,13 @@
   <%= f.submit %>
 <% end %>
 
+<%= search_form_for(@q, format: :csv) do |f| %>
+  <%= f.hidden_field :name_cont %>
+  <%= f.hidden_field :price_gteq %>
+  <%= f.hidden_field :price_lt %>
+  <%= f.submit 'CSV Download' %>
+<% end %>
+
 <table>
   <thead>
     <tr>

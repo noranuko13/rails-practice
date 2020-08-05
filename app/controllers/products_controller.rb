@@ -2,12 +2,18 @@
 
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[show edit update destroy]
+  respond_to :html, :csv
 
   # GET /products
   # GET /products.json
   def index
     @q = Product.ransack(params[:q])
     @products = @q.result(distinct: true)
+
+    respond_to do |format|
+      format.html
+      format.csv { respond_with @products.to_csv, filename: 'products' }
+    end
   end
 
   # GET /products/1
