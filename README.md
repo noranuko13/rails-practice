@@ -75,8 +75,6 @@ rubocop
 Outdated gems included in the bundle:
   * childprocess (newest 4.0.0, installed 3.0.0)
   * mini_portile2 (newest 2.5.0, installed 2.4.0)
-  * rubocop (newest 0.89.0, installed 0.78.0, requested ~> 0.78.0) in groups "development"
-  * rubocop-rails (newest 2.7.1, installed 2.5.2, requested ~> 2.4) in groups "development"
   * rubyzip (newest 2.3.0, installed 1.3.0)
   * spreadsheet_architect (newest 4.0.0, installed 3.3.1, requested ~> 3.2) in groups "default"
   * tzinfo (newest 2.0.2, installed 1.2.7)
