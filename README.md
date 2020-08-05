@@ -1,6 +1,8 @@
 # rails-practice
 - Rails practice / Ruby on Rails の練習
 
+![Actions Status](https://github.com/noranuko13/rails-practice/workflows/CI/badge.svg)
+
 
 ## How to use
 - [Docker](https://www.docker.com/)
