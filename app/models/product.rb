@@ -2,4 +2,6 @@
 
 class Product < ApplicationRecord
   include SpreadsheetArchitect
+
+  validates :name, presence: true
 end
