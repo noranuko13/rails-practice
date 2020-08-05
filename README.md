@@ -22,6 +22,10 @@ docker-compose run rpweb yarn install
 # テスト
 rails db:create RAILS_ENV=test  # 初回
 rails test
+
+# 文法チェック
+rubocop --auto-correct
+rubocop
 ```
 - http://localhost:3000
 
