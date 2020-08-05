@@ -78,4 +78,3 @@ Outdated gems included in the bundle:
   * rubyzip (newest 2.3.0, installed 1.3.0)
   * tzinfo (newest 2.0.2, installed 1.2.7)
   * unicode-display_width (newest 1.7.0, installed 1.6.1)
-  * webpacker (newest 5.1.1, installed 4.2.2, requested ~> 4.0) in groups "default"
