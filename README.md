@@ -70,9 +70,3 @@ rubocop
 - [Quickstart: Compose and Rails](https://docs.docker.com/compose/rails/)
   - Rails/PostgreSQL環境をDocker Composeで構築する
 - [Docker + Rails 6 Application setup](https://rubyinrails.com/2019/03/29/dockerify-rails-6-application-setup/)
-
-
-Outdated gems included in the bundle:
-  * childprocess (newest 4.0.0, installed 3.0.0)
-  * mini_portile2 (newest 2.5.0, installed 2.4.0)
-  * tzinfo (newest 2.0.2, installed 1.2.7)
