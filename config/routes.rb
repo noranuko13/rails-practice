@@ -9,5 +9,9 @@ Rails.application.routes.draw do
 
   get '/about', to: 'pages#about'
 
-  resources :products
+  resources :products do
+    collection do
+      delete 'destroy_multiple'
+    end
+  end
 end

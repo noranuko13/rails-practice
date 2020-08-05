@@ -68,6 +68,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  # DELETE /products/destroy_multiple
+  # DELETE /products/destroy_multiple.json
+  def destroy_multiple
+    Product.destroy(params[:product_ids])
+    respond_to do |format|
+      format.html { redirect_to products_url, notice: 'Products were successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.

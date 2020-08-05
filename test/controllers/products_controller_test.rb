@@ -51,4 +51,12 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
+  test 'should destroy multiple products' do
+    assert_difference('Product.count', -2) do
+      delete destroy_multiple_products_path(product_ids: [@product.id, products(:two).id])
+    end
+
+    assert_redirected_to products_url
+  end
 end
