@@ -70,3 +70,16 @@ rubocop
 - [Quickstart: Compose and Rails](https://docs.docker.com/compose/rails/)
   - Rails/PostgreSQL環境をDocker Composeで構築する
 - [Docker + Rails 6 Application setup](https://rubyinrails.com/2019/03/29/dockerify-rails-6-application-setup/)
+
+
+Outdated gems included in the bundle:
+  * childprocess (newest 4.0.0, installed 3.0.0)
+  * listen (newest 3.2.1, installed 3.1.5, requested >= 3.0.5, < 3.2) in groups "development"
+  * mini_portile2 (newest 2.5.0, installed 2.4.0)
+  * rubocop (newest 0.89.0, installed 0.78.0, requested ~> 0.78.0) in groups "development"
+  * rubocop-rails (newest 2.7.1, installed 2.5.2, requested ~> 2.4) in groups "development"
+  * rubyzip (newest 2.3.0, installed 1.3.0)
+  * spreadsheet_architect (newest 4.0.0, installed 3.3.1, requested ~> 3.2) in groups "default"
+  * tzinfo (newest 2.0.2, installed 1.2.7)
+  * unicode-display_width (newest 1.7.0, installed 1.6.1)
+  * webpacker (newest 5.1.1, installed 4.2.2, requested ~> 4.0) in groups "default"
