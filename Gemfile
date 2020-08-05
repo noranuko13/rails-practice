@@ -38,6 +38,9 @@ gem 'devise-i18n', '~> 1.9'
 # https://github.com/activerecord-hackery/ransack
 gem 'ransack', github: 'activerecord-hackery/ransack'
 
+# https://github.com/westonganger/spreadsheet_architect
+gem 'spreadsheet_architect', '~> 3.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
