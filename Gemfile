@@ -69,3 +69,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', '~> 1.2020', '>= 1.2020.1', platforms: %i[mingw mswin x64_mingw jruby]
+
+# Dependabot alerts
+gem 'actionpack', '>= 6.0.3.2'
+gem 'actionview', '>= 6.0.3.1'
+gem 'activestorage', '>= 6.0.3.1'
+gem 'activesupport', '>= 6.0.3.1'
