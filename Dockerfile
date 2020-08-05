@@ -9,20 +9,16 @@ WORKDIR /myapp
 # Node.js
 RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get update && apt-get install -y --no-install-recommends nodejs
-RUN node -v
-RUN npm -v
 
 # Yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update && apt-get install -y --no-install-recommends yarn
-RUN yarn -v
 
 # Gem
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
-RUN rails -v
 
 # Entry Point
 COPY entrypoint.sh /usr/bin/
