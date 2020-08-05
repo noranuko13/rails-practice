@@ -35,6 +35,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'devise-i18n', '~> 1.9'
 
+# https://github.com/activerecord-hackery/ransack
+gem 'ransack', github: 'activerecord-hackery/ransack'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
