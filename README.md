@@ -40,11 +40,6 @@ rubocop
   - 一般的な CRUD（生成・読取・更新・削除）
 
 
-## バージョン情報
-- Ruby 2.6.5
-- Ruby on Rails v6.0.2
-
-
 ## 対象ブラウザ
 - [Google Chrome ウェブブラウザ](https://www.google.com/intl/ja_jp/chrome/) 最新版
   - 個人のキャパシティで動作確認してるので、Chromeだけでお許し下さい
