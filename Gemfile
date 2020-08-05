@@ -39,7 +39,7 @@ gem 'devise-i18n', '~> 1.9'
 gem 'ransack', github: 'activerecord-hackery/ransack'
 
 # https://github.com/westonganger/spreadsheet_architect
-gem 'spreadsheet_architect', '~> 3.2'
+gem 'spreadsheet_architect', '~> 4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

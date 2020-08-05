@@ -76,7 +76,6 @@ Outdated gems included in the bundle:
   * childprocess (newest 4.0.0, installed 3.0.0)
   * mini_portile2 (newest 2.5.0, installed 2.4.0)
   * rubyzip (newest 2.3.0, installed 1.3.0)
-  * spreadsheet_architect (newest 4.0.0, installed 3.3.1, requested ~> 3.2) in groups "default"
   * tzinfo (newest 2.0.2, installed 1.2.7)
   * unicode-display_width (newest 1.7.0, installed 1.6.1)
   * webpacker (newest 5.1.1, installed 4.2.2, requested ~> 4.0) in groups "default"
