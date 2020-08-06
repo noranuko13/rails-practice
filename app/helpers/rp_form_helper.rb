@@ -5,7 +5,11 @@ module RpFormHelper
     simple_form_for(record, options, &block)
   end
 
-  def rp_search_form_for(record, **options, &block)
+  def rp_search_form_for(record, options = {}, &block)
+    options.reverse_merge!(
+      defaults: { input_html: { class: 'form-control-sm' } }
+    )
+
     search_form_for(record, options, &block)
   end
 

@@ -3,21 +3,19 @@
 <h1>Products</h1>
 
 <%= rp_search_form_for @q do |f| %>
-  <%= f.label :name %>
-  <%= f.search_field :name_cont %> ※部分一致
-
-  <%= f.label :price %>
-  <%= f.number_field :price_gteq %>以上
-  <%= f.number_field :price_lt %>未満
-
-  <%= f.submit %>
+  <%= f.input :name_cont, label: 'Name ※部分一致' %>
+  <div class="form-row">
+    <%= f.input :price_gteq, label: 'Price 以上', wrapper_html: { class: 'col-md-6' } %>
+    <%= f.input :price_lt, label: 'Price 未満', wrapper_html: { class: 'col-md-6' } %>
+  </div>
+  <%= f.button :submit, class: 'btn-primary' %>
 <% end %>
 
 <%= rp_search_form_for(@q, format: :csv) do |f| %>
-  <%= f.hidden_field :name_cont %>
-  <%= f.hidden_field :price_gteq %>
-  <%= f.hidden_field :price_lt %>
-  <%= f.submit 'CSV Download' %>
+  <%= f.input :name_cont, as: :hidden %>
+  <%= f.input :price_gteq, as: :hidden %>
+  <%= f.input :price_lt, as: :hidden %>
+  <%= f.button :submit, 'CSV Download' %>
 <% end %>
 
 <%= form_tag destroy_multiple_products_path, method: :delete do %>
