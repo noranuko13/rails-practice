@@ -2,4 +2,5 @@
 
 module ApplicationHelper
   include RpFormHelper
+  include RpNumberHelper
 end

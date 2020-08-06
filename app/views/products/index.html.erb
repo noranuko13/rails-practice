@@ -47,7 +47,7 @@
           <td><%= check_box_tag "product_ids[]", product.id %></td>
           <td><%= link_to product.name, product %></td>
           <td class="product-price">
-            <%= number_with_delimiter number_with_precision(product.price, strip_insignificant_zeros: true) %>
+            <%= rp_number_price product.price %>
           </td>
           <td><%= product.description %></td>
           <td><%= link_to 'Edit', edit_product_path(product) %></td>
