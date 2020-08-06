@@ -1,6 +1,6 @@
-<%= render 'shared/notice' %>
+<%= content_for :title, 'Products' %>
 
-<h1>Products</h1>
+<%= render 'shared/notice' %>
 
 <%= rp_search_form_for @q do |f| %>
   <%= f.input :name_cont, label: 'Name ※部分一致' %>
