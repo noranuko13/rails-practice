@@ -9,13 +9,7 @@
     <%= f.input :price_lt, label: 'Price 未満', wrapper_html: { class: 'col-md-6' } %>
   </div>
   <%= f.button :submit, class: 'btn-primary' %>
-<% end %>
-
-<%= rp_search_form_for(@q, format: :csv) do |f| %>
-  <%= f.input :name_cont, as: :hidden %>
-  <%= f.input :price_gteq, as: :hidden %>
-  <%= f.input :price_lt, as: :hidden %>
-  <%= f.button :submit, 'CSV Download' %>
+  <%= f.button :submit, 'CSV Download', class: 'btn-success', formaction: products_path(format: :csv) %>
 <% end %>
 
 <%= form_tag destroy_multiple_products_path, method: :delete do %>
