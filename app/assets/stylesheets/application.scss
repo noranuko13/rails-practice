@@ -14,3 +14,12 @@
  *= require_tree .
  *= require_self
  */
+
+main.rp-main {
+  padding: 1rem 0;
+}
+
+footer.rp-footer {
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+}

@@ -12,12 +12,15 @@
   <body>
     <% container = content_for?(:container) ? yield(:container) : 'container' %>
     <header class="rp-header">
-      <div class="<%= container %>">
-        <h1><%= if content_for?(:title) then yield(:title) end %></h1>
-      </div>
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="<%= container %>">
+          <%= link_to 'Myapp', root_path %>
+        </div>
+      </nav>
     </header>
     <main class="rp-main">
       <div class="<%= container %>">
+        <h1><%= if content_for?(:title) then yield(:title) end %></h1>
         <%= yield %>
       </div>
     </main>
