@@ -37,6 +37,7 @@ gem 'devise-i18n', '~> 1.9'
 
 # https://github.com/activerecord-hackery/ransack
 gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 # https://github.com/westonganger/spreadsheet_architect
 gem 'spreadsheet_architect', '~> 4.0'
