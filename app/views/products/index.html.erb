@@ -1,5 +1,13 @@
 <%= content_for :title, 'Products' %>
 
+<div class="mb-3">
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <%= link_to 'New Product', new_product_path, class: 'btn btn-info' %>
+    </li>
+  </ul>
+</div>
+
 <%= render 'shared/notice' %>
 
 <%= rp_search_form_for @q do |f| %>
@@ -49,7 +57,3 @@
   </table>
 
 <% end %>
-
-<br>
-
-<%= link_to 'New Product', new_product_path %>
