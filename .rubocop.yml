@@ -6,6 +6,9 @@ AllCops:
     - 'node_modules/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
+    # simple_formにより自動生成されるファイル
+    - 'config/initializers/simple_form.rb'
+    - 'config/initializers/simple_form_bootstrap.rb'
 
 require:
   - rubocop-rails
