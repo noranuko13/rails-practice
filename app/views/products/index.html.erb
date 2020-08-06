@@ -2,7 +2,7 @@
 
 <h1>Products</h1>
 
-<%= search_form_for @q do |f| %>
+<%= rp_search_form_for @q do |f| %>
   <%= f.label :name %>
   <%= f.search_field :name_cont %> ※部分一致
 
@@ -13,7 +13,7 @@
   <%= f.submit %>
 <% end %>
 
-<%= search_form_for(@q, format: :csv) do |f| %>
+<%= rp_search_form_for(@q, format: :csv) do |f| %>
   <%= f.hidden_field :name_cont %>
   <%= f.hidden_field :price_gteq %>
   <%= f.hidden_field :price_lt %>
