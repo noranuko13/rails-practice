@@ -10,7 +10,21 @@
   </head>
 
   <body>
-    <h1><%= if content_for?(:title) then yield(:title) end %></h1>
-    <%= yield %>
+    <% container = content_for?(:container) ? yield(:container) : 'container' %>
+    <header class="rp-header">
+      <div class="<%= container %>">
+        <h1><%= if content_for?(:title) then yield(:title) end %></h1>
+      </div>
+    </header>
+    <main class="rp-main">
+      <div class="<%= container %>">
+        <%= yield %>
+      </div>
+    </main>
+    <footer class="rp-footer">
+      <div class="<%= container %>">
+        &copy; 2020 Noranuko.net
+      </div>
+    </footer>
   </body>
 </html>
