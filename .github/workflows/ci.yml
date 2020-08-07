@@ -34,4 +34,4 @@ jobs:
       - name: Upload reports to Codecov.
         uses: codecov/codecov-action@v1
         with:
-          directory: ./coverage/
+          directory: /myapp/coverage/
