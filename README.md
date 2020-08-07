@@ -19,7 +19,7 @@ rails db:create
 rails db:migrate RAILS_ENV=development
 
 # パッケージのインストール
-docker-compose run rpweb yarn install
+docker-compose exec rpweb yarn install
 
 # テスト
 rails db:create RAILS_ENV=test  # 初回
