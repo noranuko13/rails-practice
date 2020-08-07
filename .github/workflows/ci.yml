@@ -30,6 +30,6 @@ jobs:
       - name: Run yarn install.
         run: docker-compose run rpweb yarn install
       - name: Run Minitest.
-        run: docker-compose run rpweb rails test
+        run: docker-compose run -e CODECOV_TOKEN=$CODECOV_TOKEN rpweb rails test
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
