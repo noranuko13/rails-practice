@@ -19,8 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build Docker image.
-        run: docker-compose build
       - name: Start service.
         run: docker-compose up -d
       - name: Run RuboCop.
