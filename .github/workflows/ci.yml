@@ -31,7 +31,5 @@ jobs:
         run: docker-compose run rpweb yarn install
       - name: Run Minitest.
         run: docker-compose run rpweb rails test
-      - name: Upload reports to Codecov.
-        uses: codecov/codecov-action@v1
-        with:
-          directory: /myapp/coverage/
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
