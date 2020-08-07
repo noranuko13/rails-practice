@@ -1,5 +1,13 @@
 # frozen_string_literal: true
 
+# https://github.com/codecov/codecov-ruby
+require 'simplecov'
+SimpleCov.start 'rails'
+if ENV['CODECOV_TOKEN']
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'

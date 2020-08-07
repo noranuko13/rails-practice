@@ -66,6 +66,8 @@ group :test do
   gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers', '~> 4.4', '>= 4.4.1'
+  # https://github.com/codecov/codecov-ruby
+  gem 'codecov', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
