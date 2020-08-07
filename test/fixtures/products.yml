@@ -2,10 +2,10 @@
 
 one:
   name: 流行りのゲーム機
-  price: 35960.00
+  regular_price: 35960.00
   description: お家で遊ぶ？　公園で遊ぶ？　自由度アップで楽しさ無限大
 
 two:
   name: もふもふマスク
-  price: 1528.00
+  regular_price: 1528.00
   description: もふ毛がウィルスや花粉をブロックしてくれるかもしれない

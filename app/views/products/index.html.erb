@@ -14,8 +14,8 @@
 <%= rp_search_form_for @q do |f| %>
   <%= f.input :name_cont, label: 'Name ※部分一致' %>
   <div class="form-row">
-    <%= f.input :price_gteq, label: 'Price 以上', wrapper_html: { class: 'col-md-6' } %>
-    <%= f.input :price_lt, label: 'Price 未満', wrapper_html: { class: 'col-md-6' } %>
+    <%= f.input :regular_price_gteq, label: 'Regular Price 以上', wrapper_html: { class: 'col-md-6' } %>
+    <%= f.input :regular_price_lt, label: 'Regular Price 未満', wrapper_html: { class: 'col-md-6' } %>
   </div>
   <%= f.button :submit, class: 'btn-primary' %>
   <%= f.button :submit, 'CSV Download', class: 'btn-success', formaction: products_path(format: :csv) %>
@@ -35,7 +35,7 @@
       <tr>
         <th scope="col"></th>
         <th scope="col"><%= sort_link(@q, :name) %></th>
-        <th scope="col"><%= sort_link(@q, :price) %></th>
+        <th scope="col"><%= sort_link(@q, :regular_price) %></th>
         <th scope="col">Description</th>
         <th colspan="2" scope="col"></th>
       </tr>
@@ -46,8 +46,8 @@
         <tr>
           <td><%= check_box_tag "product_ids[]", product.id %></td>
           <td><%= link_to product.name, product %></td>
-          <td class="product-price">
-            <%= rp_number_price product.price %>
+          <td class="product-regular-price">
+            <%= rp_number_price product.regular_price %>
           </td>
           <td><%= product.description %></td>
           <td><%= link_to 'Edit', edit_product_path(product) %></td>
