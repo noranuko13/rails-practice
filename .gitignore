@@ -1,5 +1,5 @@
 # https://github.com/github/gitignore/blob/master/Rails.gitignore
-# 1604c21
+# 823e38f
 *.rbc
 capybara-*.html
 .rspec
@@ -68,3 +68,4 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+/public/uploads
