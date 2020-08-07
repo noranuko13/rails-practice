@@ -1,4 +1,4 @@
-# 【ポイント】 Autoprefixer 対象ブラウザ指定
+# Autoprefixer 対象ブラウザ指定
 # https://github.com/browserslist/browserslist
 
 last 2 Chrome versions, last 2 ChromeAndroid versions
