@@ -22,13 +22,13 @@ jobs:
       - name: Start service.
         run: docker-compose up -d
       - name: Run RuboCop.
-        run: docker-compose exec rpweb rubocop
+        run: docker-compose exec -T rpweb rubocop
       - name: Create Database.
-        run: docker-compose exec rpweb rails db:create RAILS_ENV=test
+        run: docker-compose exec -T rpweb rails db:create RAILS_ENV=test
       - name: Run yarn install.
-        run: docker-compose exec rpweb yarn install
+        run: docker-compose exec -T rpweb yarn install
       - name: Run Minitest.
-        run: docker-compose exec rpweb rails test
+        run: docker-compose exec -T rpweb rails test
       - name: Upload reports to Codecov.
         uses: codecov/codecov-action@v1
         with:
